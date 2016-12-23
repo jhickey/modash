@@ -1,12 +1,13 @@
 language: node_js
 node_js:
 - '7'
+before_install:
+  npm install -g npm@'>=4.0.5'
 script:
 - npm run build
 - npm run test
 deploy:
   provider: npm
-  email: jhickeyiv@gmail.com
   api_key:
     secure: Uhks1iq7jnZTdxKEYTzHmmev/jjGmgkoI52fU1iBjYGarMzvxSlOAjQRixKl8XtR3Hg0Tonlqua8IM+S09TocPiX7PfxYwqNU11ShzsXuDgma/K+Uxxa+KbO4aPL5SxsiUYFXeuRCReOv8/eu6w/dtbJxQHE8H8vFo0dSwk2cy/7FV6i7CesWNuvt6QquFY2lLqHMmhauVPeTIbjQvo6I4ROTY0vBIDA04C84w59lVpGeSw049un8pvISZodgyVJLGg6eH0cWPpjJO2cDqcMDQODsvD9CMNe5wsrfXm8ztLNTA5e+x15cVWiFze1T/7Vww2xdAJgrDE4S51faYJLo6XF5ODE3zW7Mo7MNNQHcVd3WjiuZDCISNdGDl7I8OUAJ+RJ5AIarDTKylbCM4IYf+BHN6M9F0rQN1QMd2izVF2nmKpc0QxozyRov3EUnTt4fjUMxaD4XQO3QTYOAsMOSM22oVaUp5ExFJ2ILk7Cn205QiGoGpdpy+GlF9YXfULQGKyz7JT2KIAXGFRv7MH/69zoAvqIlrmOmNwOruqFiAumuIgiwqn03UVMGePkqhItHVsrJrJ27ZRk1wfVY1TWwE2rw5NttsKzRe5Zq5F3Zu2Bd1KSSSH9kTQ9X4EnaTDxkN+CYyMJusgF/VV94qF7nhOlxjvn+2h6t/nvNqgbKyo=
     on:
