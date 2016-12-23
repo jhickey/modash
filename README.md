@@ -22,7 +22,7 @@ obj::omit('a'); // {b: 2, c: 3}
 
 const arr = ['a', 'b', 'c'];
 
-obj2
+arr
 	::zip([1,2,3])
 	::last(); // ['c', 3]
 
@@ -33,7 +33,7 @@ const imm = fromJS({a: 1, b: 2, c: 3});
 const imm2 = imm::omit('a');
 imm2.has('a'); //false
 
-//Without `::`
+//without `::`
 
 const obj = {a: 1, b: 2, c: 3};
 
@@ -42,7 +42,7 @@ omit.call(obj, 'a'); // {b: 2, c: 3}
 
 ```
 
-##Should I use this
+##Should I use this?
 
 Eh, probably not: 
 
