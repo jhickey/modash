@@ -1,12 +1,12 @@
-#Modash
+# Modash
 Lodash virtual methods that work with immutablejs
 
-##Install
+## Install
 `npm install --save modash`
 
 Depends on [lodash](https://lodash.com/) and [immutable-js](https://facebook.github.io/immutable-js/)
 
-##Usage
+## Usage
 
 Use with the `::` operator to call lodash functions as virtual methods
 
