@@ -42,7 +42,7 @@ omit.call(obj, 'a'); // {b: 2, c: 3}
 
 ```
 
-##Should I use this?
+## Should I use this?
 
 Eh, probably not: 
 
